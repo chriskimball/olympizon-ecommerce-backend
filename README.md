@@ -14,54 +14,74 @@ The following project is the back end server and data model for an e-commerce we
 
 This application has no front end at the moment, therefore users must interact with the API through an API client such as Insomnia.
 
-E
-<!-- When a user initiates the application via command line terminal they will be prompted with the following choices:
+Users can make requests to the following API routes to create, read, update or delete data from the database.
 
-* View All Employees
-* View Employees By Manager
-* View Employees By Department
-* Add Employee
-* Delete Employee
-* Update Employee Role
-* Update Employee's Manager
-* View All Roles
-* Add Role
-* Delete Role
-* View All Departments
-* View Department Budget
-* Add Department
-* Delete Department
-* Quit
+### Products
+* GET All Products: GET request to ```http://localhost:3001/api/products/```
+* GET one single Product by id: GET request to ```http://localhost:3001/api/products/:id```
+* CREATE New Product: POST request to ```http://localhost:3001/api/products/```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "product_name": "Michael Jordan's socks",
+        "price": 200.00,
+        "stock": 3,
+        "tagIds": [1, 2, 3, 4],
+        "category_id": 5
+    }
+    ```
+* UPDATE Existing Product by id: PUT request to ```http://localhost:3001/api/products/:id```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "product_name": "Basketball socks but affordable",
+        "price": 20.00,
+        "stock": 30,
+        "tagIds": [1, 2],
+        "category_id": 5
+    }
+    ```
+* DELETE Product by id: DELETE request to ```http://localhost:3001/api/products/:id```
 
-When the `View All Employees` option is selected, the user will be returned a table of all employees, their roles, and managers information.
+### Tags
+* GET All Tags: GET request to ```http://localhost:3001/api/tags/```
+* GET one single Tag by id: GET request to ```http://localhost:3001/api/tags/:id```
+* CREATE New Tag: POST request to ```http://localhost:3001/api/tags/```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "tag_name": "Coding is cool",
+        "productIds": [1,2,3]
+    }
+    ```
+* UPDATE Existing Tag by id: PUT request to ```http://localhost:3001/api/tags/:id```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "tag_name": "APIs are great and useful",
+        "productIds": [1]
+    }
+    ```
+* DELETE Tag by id: DELETE request to ```http://localhost:3001/api/tags/:id```
 
-When the `View Employees By Manager` option is selected, the user will be prompted to select a specific manager, which will return them a table that displays all employees for the specified manager.
-
-When the `View Employees By Department` option is selected, the user will be prompted to select a specific department, which will return them a table that displays all employees for the specified department.
-
-When the `Add Employee` option is selected, the user will be prompted to fill in information to create a new employee record in the database including `first name`, `last name`, `role`, and `manager`.
-
-When the `Delete Employee` option is selected, the user will be prompted to choose an existing employee record from the database to delete.
-
-When the `Update Employee Role` option is selected, the user will be prompted to select an existing employee and also select a new role to assign to the selected employee record.
-
-When the `Update Employee's Manager` option is selected, the user will be prompted to select an existing employee and then promppt them to select a new manager for the selected employee.
-
-When the `View All Roles` option is selected, the user will be returned a table with all roles, salary, and department information.
-
-When the `Add Role` option is selected, the user will be propmted to fill in information to create a new role record in the database including `role title`, `role salary`, and the role's `department`.
-
-When the `Delete Role` option is selected, the user will be prompted to select a specific role to be deleted, additionally they will be prompted to assign new roles for employees who currently have the role that will be deleted.
-
-When the `View All Departments` option is selected, the user will be returned a table with all departments within the database.
-
-When the `View Department Budget` option is selected, the user will be prompted to select a specific department which will then return a table with the department's name and a SUM of all employees/roles associeated with the given department.
-
-When the `Add Department` option is selected, the user will be prompted to enter the new departments name which will then be created in the database.
-
-When the `Delete Department` option is selected, the user will be prompted to select a department that will be deleted. They will also be prompted to re-assign any roles to a new department that currently are associated to the department that will be deleted.
-
-When the `Quit` option is selected, the application will close. -->
+### Categories
+* GET All Categories: GET request to ```http://localhost:3001/api/categories/```
+* GET one single Category by id: GET request to ```http://localhost:3001/api/categories/:id```
+* CREATE New Category: POST request to ```http://localhost:3001/api/categories/```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "category_name": "Socks"
+    }
+    ```
+* UPDATE Existing Category by id: PUT request to ```http://localhost:3001/api/categories/:id```
+    * Example JSON body data in POST request:
+    ```bash
+    {
+        "category_name": "Famous socks"
+    }
+    ```
+* DELETE Category by id: DELETE request to ```http://localhost:3001/api/categories/:id```
 
 
 ## Table of Contents 
