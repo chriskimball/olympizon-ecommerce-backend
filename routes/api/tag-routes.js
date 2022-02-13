@@ -72,12 +72,20 @@ router.put("/:id", async (req, res) => {
     } 
   */
   try {
+    const tag = await Tag.findByPk(req.params.id, {
+      // include: [{ model: Product, through: ProductTag }],
+    });
+
+    if (!tag) {
+      res.status(404).json({ message: "No Tag data found with this id!" });
+      return;
+    }
     const tagData = await Tag.update(req.body, {
       where: {
         id: req.params.id,
       },
     });
-
+    
     const productTags = await ProductTag.findAll({
       where: { tag_id: req.params.id },
     });
