@@ -15,7 +15,7 @@ The following project is the back end server and data model for an e-commerce we
 This application has no front end at the moment, therefore users must interact with the API through an API client such as Insomnia.
 
 E
-When a user initiates the application via command line terminal they will be prompted with the following choices:
+<!-- When a user initiates the application via command line terminal they will be prompted with the following choices:
 
 * View All Employees
 * View Employees By Manager
@@ -61,7 +61,7 @@ When the `Add Department` option is selected, the user will be prompted to enter
 
 When the `Delete Department` option is selected, the user will be prompted to select a department that will be deleted. They will also be prompted to re-assign any roles to a new department that currently are associated to the department that will be deleted.
 
-When the `Quit` option is selected, the application will close.
+When the `Quit` option is selected, the application will close. -->
 
 
 ## Table of Contents 
@@ -72,16 +72,15 @@ When the `Quit` option is selected, the application will close.
 * [License](#license)
 * [Techology Used](#technology-used)
 * [Questions](#questions)
-* [Screenshots](#screenshots)
 
-TODO:
+
 ## Web Addresses
 ---------------
 
 *  [Github Repository](https://github.com/chriskimball/olympizon-ecommerce-backend "Github Repo")
-*  [Walkthrough Demo Part 1](https://watch.screencastify.com/v/XYOQikJNTyj5ReGUWF8n "Walkthrough Demo Part 1")
-*  [Walkthrough Demo Part 2](https://watch.screencastify.com/v/7oiAT26zjX2QRWqbeB0x "Walkthrough Demo Part 2")
-*  [Walkthrough Demo Part 3](https://watch.screencastify.com/v/W583EGifSsnLemEzytuF "Walkthrough Demo Part 3")
+*  [Walkthrough Demo Part 1](https://watch.screencastify.com/v/HeSGAJDGyeXjwtHWFB9b "Walkthrough Demo Part 1")
+*  [Walkthrough Demo Part 2](https://watch.screencastify.com/v/VdKKqlPSBL4TB29JUjq0 "Walkthrough Demo Part 2")
+*  [Walkthrough Demo Part 3](https://watch.screencastify.com/v/jqrxybZUpPKLFQoVCZXp "Walkthrough Demo Part 3")
 
 
 ## Installation
@@ -146,23 +145,3 @@ This project is licensed under the MIT license.
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at [ctrain21@gmail.com](mailto:ctrain21@gmail.com). You can find more of my work at [chirskimball](https://github.com/chirskimball "chirskimball's GitHub Profile").
-
- TODO:
-## Screenshots
-
-### Screenshot of initial launch
-
-![Screenshot of initial launch](./assets/screenshots/init.PNG)
-
-### Screenshot of View All Employees option
-
-![Screenshot of View All Employees option](./assets/screenshots/viewAllEmployees.PNG)
-
-### Screenshot of View Department Budget option
-
-![Screenshot of View Department Budget option](./assets/screenshots/viewDepartmentBudget.PNG)
-
-### Screenshot of Update Employee Role option
-
-![Screenshot of Update Employee Role option](./assets/screenshots/updateEmployeeRole.PNG)
-
